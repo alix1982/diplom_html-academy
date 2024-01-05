@@ -1,9 +1,9 @@
-import imgDecaf1 from './images/main/slider/flat_white_img1.png';
-import imgDecaf2 from './images/main/slider/flat_white_img2.png'
-import imgDecaf3 from './images/main/slider/flat_white_img3.png'
-import imgDecaf4 from './images/main/slider/flat_white_img4.png'
-import imgDecaf5 from './images/main/slider/flat_white_img5.png'
-import imgDecaf6 from './images/main/slider/flat_white_img6.png'
+import imgDecaf1 from '../../images/main/slider/flat_white_img1.png';
+import imgDecaf2 from '../../images/main/slider/flat_white_img2.png';
+import imgDecaf3 from '../../images/main/slider/flat_white_img3.png';
+import imgDecaf4 from '../../images/main/slider/flat_white_img4.png';
+import imgDecaf5 from '../../images/main/slider/flat_white_img5.png';
+import imgDecaf6 from '../../images/main/slider/flat_white_img6.png';
 
 export const products = [
     {

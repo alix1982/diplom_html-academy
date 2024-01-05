@@ -1,9 +1,4 @@
 import styled from 'styled-components';
-// import { Swiper } from "swiper/react";
-// import Button from "/src/components/ui/button/button";
-// import { ReactComponent as LeftArrow } from "/src/assets/left-arrow.svg";
-// import leftArrow from '../../../images/main/slider/leftArrow.svg';
-// import rightArrow from '../../../images/main/slider/rightArrow.svg';
 
 export const SlideStl = styled.article`
     width: 100%;
@@ -96,6 +91,14 @@ export const SlideStl = styled.article`
         border-radius: 4px;
         background: #7859CF;
         padding: 8px 20px;
+    }
+
+    @media (min-width: 1500px) {
+        .slide__img {
+            width: 625px;
+            height: 625px;
+            margin: 0;
+        }
     }
 
     @media (max-width: 1400px) {

@@ -8,7 +8,7 @@ export const Slide = ({product}) => {
       <SlideStl>
         <img className='slide__img' src={product.img} width='280' height='280' alt='фото продукта'/>
         <div className='slide__content'>
-            <p className='slide__news'>{product.news ? 'Новинка!' : ''}</p>
+            <h1 className='slide__news'>{product.news ? 'Новинка!' : ''}</h1>
             <h2 className='slide__heading'>{product.title}</h2>
             <p className='slide__text'>{product.text}</p>
             <div className='slide__buy'>

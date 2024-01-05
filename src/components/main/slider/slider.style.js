@@ -5,22 +5,10 @@ import rightArrow from '../../../images/main/slider/rightArrow.svg';
 export const SliderStl = styled.section`
     width: 100%;
 
-    /* @media (min-width: 600px) {
-       
-    }
-    @media (min-width: 1400px) {
-       
-    } */
     .swiper {
         width: 100%;
         height: 100%;
     }
-    
-    /* .mySwiper {
-        display: flex;
-        border: 1px solid red;
-    } */
-
     .swiper-wrapper {
         height: 100%;
     }

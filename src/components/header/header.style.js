@@ -28,31 +28,6 @@ export const HeaderStl = styled.header`
             display: flex;
         }
     }
-
-    .todoForm__inputName, .todoForm__inputText {
-        height: 20px;
-        border-radius: 10px;
-        margin: 0;
-        margin-bottom: 5px;
-        padding: 5px 10px;
-        transition: opacity 0.5s linear;
-        cursor: pointer;
-    }
-
-    .todoForm__inputName:hover, .todoForm__inputText:hover {
-        opacity: 0.6;
-    }
-
-    .todoForm__buttonSubmit, .todoForm__buttonCancel {
-        width: 35%;
-        height: 25px;
-        border-radius: 10px;
-        transition: opacity 0.5s linear;
-        cursor: pointer;
-        @media (max-width: 750px) {
-            width: 45%;
-        }
-    }
 `;
 
 export const MenuStl = styled.nav`
@@ -95,20 +70,6 @@ export const MenuStl = styled.nav`
         border-radius: 10px;
         background-color: #ffffff;
     }
-    /* .header__menu {
-        display: none;
-        list-style: none;
-        padding: 0;
-        @media (min-width: 600px) {
-            display: flex;
-            align-items: center;
-            margin: 0 auto;
-        }
-        @media (min-width: 1400px) {
-            gap: 20px;
-        }
-    } */
-
     .header__point {
         margin: 0;
         color: #333;

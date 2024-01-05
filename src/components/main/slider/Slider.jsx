@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -7,7 +7,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 
 import { SliderStl } from "./slider.style";
 import { Slide } from "./slide/Slide";
-import { products } from "../../../constants";
+import { products } from "../products";
 // import imgDecaf from '../../../images/main/slider/flat_white_img.png';
 // import {ReactComponent as LeftArrow} from '../../../images/main/slider/leftArrow.svg';
 // import {ReactComponent as RightArrow} from '../../../images/main/slider/rightArrow.svg';
@@ -15,7 +15,7 @@ import { products } from "../../../constants";
 export const Slider = () => {
 
     return (
-        <SliderStl>
+        <SliderStl >
             <Swiper
                 pagination={{
                     dynamicBullets: true,
