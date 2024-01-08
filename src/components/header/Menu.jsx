@@ -14,10 +14,26 @@ export const Menu = ({ handleMenu, isMenu, setIsMenu }) => {
     return (
         <MenuStl >
             <ul className={`header__menu ${isMenu ? 'header__menu_active' : ''} `}>
-                <li className='header__point'>Главная</li>
-                <li className='header__point'>Каталог</li>
-                <li className='header__point'>Доставка</li>
-                <li className='header__point'>О нас</li>
+                <li className='header__point header__point_active'>
+                    <a className="header__link header__link_active" href="#slider">
+                        Главная
+                    </a>
+                </li>
+                <li className='header__point'>
+                    <a className="header__link" href="#catalog">
+                        Каталог
+                    </a>
+                </li>
+                <li className='header__point'>
+                    <a className="header__link" href="#maps">
+                        Доставка
+                    </a>
+                </li>
+                <li className='header__point'>
+                    <a className="header__link" href="#advantages">
+                        О нас
+                    </a>
+                </li>
             </ul>
             <button className="header__burger" onClick={handleMenu}>
                 {!isMenu ? <Burger/> : <Close/>}
@@ -25,3 +41,4 @@ export const Menu = ({ handleMenu, isMenu, setIsMenu }) => {
         </MenuStl>
     );
 }
+

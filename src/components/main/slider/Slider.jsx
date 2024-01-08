@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -8,14 +8,16 @@ import { Pagination, Navigation } from 'swiper/modules';
 import { SliderStl } from "./slider.style";
 import { Slide } from "./slide/Slide";
 import { products } from "../products";
-// import imgDecaf from '../../../images/main/slider/flat_white_img.png';
-// import {ReactComponent as LeftArrow} from '../../../images/main/slider/leftArrow.svg';
-// import {ReactComponent as RightArrow} from '../../../images/main/slider/rightArrow.svg';
 
 export const Slider = () => {
 
+    const [productsSortSlider, setProductsSortSlider] = useState(products)
+    useEffect(()=>{
+        setProductsSortSlider(productsSortSlider.filter((product => product.news)))
+    },[])
+    
     return (
-        <SliderStl >
+        <SliderStl id='slider'>
             <Swiper
                 pagination={{
                     dynamicBullets: true,
@@ -24,7 +26,7 @@ export const Slider = () => {
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
             >
-                {products.length ? products.map(product =>
+                {productsSortSlider.length ? productsSortSlider.map(product =>
                     <SwiperSlide key={product.id}>
                         <Slide product={product}/>
                     </SwiperSlide>

@@ -5,7 +5,6 @@ export const MapsStl = styled.section`
         width: 120px;
         position: relative;
         left: calc(100% - 130px);
-        /* right: -50%; */
         top: 10px;
         margin: 0 auto;
         z-index: 401;

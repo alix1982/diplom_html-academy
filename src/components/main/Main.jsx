@@ -5,13 +5,13 @@ import { Advantages } from "./advantages/Advantages";
 import { Catalog } from "./catalog/Catalog";
 import { Maps } from "./maps/Maps";
 
-export const Main = () => {
+export const Main = ({isSizeWindow}) => {
 
   return (
       <MainStl>
         <Slider />
         <Advantages />
-        <Catalog />
+        <Catalog isSizeWindow={isSizeWindow}/>
         <Maps/>
       </MainStl>
   );

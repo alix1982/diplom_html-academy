@@ -6,7 +6,7 @@ import { Advantage } from "./advantage/Advantage";
 export const Advantages = () => {
 
   return (
-      <AdvantagesStl>
+      <AdvantagesStl id="advantages">
         <h1 className='advantages__heading'>Преимущества</h1>
         <p className='advantages__text'>Главные причины выбрать Drink2Go</p>
         <ul className='advantages__list'>

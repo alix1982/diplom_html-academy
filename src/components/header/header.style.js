@@ -36,7 +36,7 @@ export const MenuStl = styled.nav`
     margin: 22px 22px 22px 22px;
     order: 10;
     @media (min-width: 600px) {
-        margin: 22px auto;
+        margin: 0 auto;
         order: 0;
     }
     
@@ -64,6 +64,7 @@ export const MenuStl = styled.nav`
         gap: 20px;
         position: absolute;
         right: 40px;
+        z-index: 500;
         margin: 0;
         padding: 20px;
         border: 1px solid #000000;
@@ -86,10 +87,21 @@ export const MenuStl = styled.nav`
             opacity: 0.6;
         }
         @media (min-width: 600px) {
-            margin: 0 20px;
+            padding: 22px 20px;
         }
     }
-
+    .header__point_active {
+        @media (min-width: 600px) {
+            border-bottom: 2px solid #7859CF;
+        }
+    }
+    .header__link {
+        text-decoration: none;
+        color: #333;
+    }
+    .header__link_active {
+        color: #7859CF;
+    }
     .header__burger {
         border: none;
         background-color: transparent;
