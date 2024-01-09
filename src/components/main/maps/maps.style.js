@@ -24,7 +24,6 @@ export const MapsStl = styled.section`
         border-radius: 50%;
         outline: 4px solid #7859CF;
         background-color: #ffffff;
-        /* border: 1px solid red; */
     }
     .cluster-icon {
         width: 28px;
@@ -35,13 +34,14 @@ export const MapsStl = styled.section`
         border-radius: 50%;
         background-color: #7859CF;
         color: #ffffff;
-        /* border: 1px solid green; */
     }
+
     @media (max-width: 1400px) {
         .leaflet-container {
             height: 62.5vw;
         }
     }
+    
     @media (max-width: 600px) {
         .leaflet-container {
             height: 131.25vw;

@@ -1,6 +1,10 @@
-import React, {useState} from "react";
+import React from "react";
 import { SliderPriceStl } from "./sliderPrice.stule";
-import {Typography, Slider, Box} from '@mui/material';
+import {
+  // Typography,
+  Slider,
+  Box
+} from '@mui/material';
 
 export const SliderPrice = ({sliderValue, setSliderValue}) => {
 

@@ -31,7 +31,6 @@ export const App = () => {
       setIsMenu(!isMenu);
   }
   const onCloseOverlay = (evt) => {
-    // console.log(evt);
     (evt.target === evt.currentTarget) && setIsMenu(false)
   }
 

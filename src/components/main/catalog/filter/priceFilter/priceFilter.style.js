@@ -47,30 +47,8 @@ export const PriceFilterStl = styled.article`
     @media (max-width: 1400px) {
         width: 30.5%;
 
-        /* .priceFilter__values {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        } */
         .priceFilter__value {
             width: calc(88px - 20px);
-            /* height: calc(40px - 16px); */
-            /* padding: 8px 10px; */
-            /* margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 4px;
-            outline: 2px solid #9070EC;
-            background: #FFF;
-            color: #333;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 24px; */
         }
     }
 

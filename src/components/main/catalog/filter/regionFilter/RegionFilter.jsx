@@ -2,13 +2,13 @@ import React, {useState, useEffect} from "react";
 import { RegionFilterStl } from "./regionFilter.style";
 import { products } from "../../../products";
 
-export const RegionFilter = () => {
-  const [values, setValues] = useState({brazil: false, ethiopia: false, colombia: false, costa_rica: false, peru: false});
+export const RegionFilter = ({values, setValues}) => {
+  // const [values, setValues] = useState({brazil: false, ethiopia: false, colombia: false, costa_rica: false, peru: false});
   const [isRegion, setIsRegion] = useState({brazil: false, ethiopia: false, colombia: false, costa_rica: false, peru: false});
-
+  
   useEffect(()=>{
     const isBrazil = (products.find((product)=> product.region === 'Brazil')) ? true : false;
-    const isEthiopia = (products.find((product)=> product.region === 'Ethiopia')) ? true : false
+    const isEthiopia = (products.find((product)=> product.region === 'Ethiopia')) ? true : false;
     const isColombia = (products.find((product)=> product.region === 'Colombia')) ? true : false;
     const isCosta_Rica = (products.find((product)=> product.region === 'Costa_Rica')) ? true : false;
     const isPeru = (products.find((product)=> product.region === 'Peru')) ? true : false;
@@ -19,9 +19,7 @@ export const RegionFilter = () => {
   const handleValues = (e) => {
       // setValues({...{brazil: false, ethiopia: false, colombia: false, costa_rica: false, peru: false}, [e.target.value]: e.target.checked})
       setValues({...values, [e.target.value]: e.target.checked})
-
   }
-  // console.log(values)
 
   return (
       <RegionFilterStl>

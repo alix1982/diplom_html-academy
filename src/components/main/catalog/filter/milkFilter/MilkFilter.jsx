@@ -2,9 +2,7 @@ import React, {useState, useEffect} from "react";
 import { MilkFilterStl } from "./milkFilter.style";
 import { products } from "../../../products";
 
-export const MilkFilter = () => {
-  // const [valueCheked, setValueChecked] = useState({})
-  const [valueCheked, setValueChecked] = useState('')
+export const MilkFilter = ({setValueChecked}) => {
 
   const [isMilk, setIsMilk] = useState({milk: false, animal: false, vegetable: false})
 
@@ -16,10 +14,9 @@ export const MilkFilter = () => {
   },[products])
 
     const handleValueChecked = (e) => {
-        // setValueChecked({[e.target.value]: e.target.checked})
+        // setValueChecked({[e.target.value]: e.target.checked}) // для получения в valueChecked массива с обьектами всех инпутов
         setValueChecked(e.target.value)
     }
-    // console.log(valueCheked)
 
   return (
       <MilkFilterStl>

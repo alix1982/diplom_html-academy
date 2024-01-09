@@ -1,11 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 import { PriceFilterStl } from "./priceFilter.style";
 import { SliderPrice } from "./sliderPrice/SliderPrice";
 import { ReactComponent as Dash } from '../../../../../images/main/catalog/filter/dash.svg';
 
-export const PriceFilter = () => {
-
-  const [sliderValue, setSliderValue] = useState([100, 900]);
+export const PriceFilter = ({ sliderValue, setSliderValue }) => {
 
   return (
       <PriceFilterStl>
